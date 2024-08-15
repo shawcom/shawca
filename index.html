@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./asset/shawfavicon.svg" type="image/x-icon" />
+    <script src="./script.js" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Sign In - Shaw</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="main__nav">
+          <div class="nav--col__first">
+            <button class="btn" type="button">Personal</button>
+            <button class="btn" type="button">Business</button>
+          </div>
+          <ul class="nav--col__second menu">
+            <li class="menu__item">Shop</li>
+            <li class="menu__item">Support</li>
+            <li class="menu__item">My Shaw</li>
+          </ul>
+        </div>
+        <div class="sec__nav">
+          <i class="fa-solid fa-message"></i>
+          <span class="contact-btn">Contact</span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="wrapper__col-1">
+          <img src="./asset/shawWebmailBanner.png" alt="logo" class="logo" />
+          <h1 class="title">Sign in to access your Shaw email</h1>
+          <form action="" id="form" class="form">
+            <div class="error__wrapper">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span class="error">Invalid Shaw email or password. Please try again.</span>
+            </div>
+            <div class="input_table">
+              <div class="input__table-cell">
+                <label for="email" class="label">Shaw email</label>
+                <input type="email" name="email" id="email" class="email input" required />
+              </div>
+              <div class="input__table-cell">
+                <div class="help__container">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>Help</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_table">
+              <div class="input__table-cell">
+                <label for="password" class="label">Password</label>
+                <input type="password" name="password" id="password" class="password input" required />
+              </div>
+              <div class="input__table-cell"></div>
+            </div>
+            <div class="remember-password__container">
+              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox" class="label--checkbox">Remember Shaw email</label>
+            </div>
+            <button type="submit" class="btn btn--submit">Sign in</button>
+          </form>
+          <p>
+            Having trouble?
+            <a href="https://www.shaw.ca" class="link">Shaw Support How To Reset My Password</a>
+          </p>
+          <p>
+            Already Know How?
+            <a href="https://www.shaw.ca" class="link">Rest Password On My Shaw</a>
+          </p>
+        </div>
+        <div class="wrapper__col-2"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__col-1">
+          <span>© 2024 Shaw Communications. All Rights Reserved.</span>
+        </div>
+        <div class="footer__col-2">
+          <ul class="footer__nav">
+            <li class="footer__nav-list">Privacy Policy</li>
+            <li class="footer__nav-list">Terms of Use</li>
+            <li class="footer__nav-list">Accessibility</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
